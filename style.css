@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    color: white;
+}
+.card{
+    max-width: 300px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: hsl(216, 50%, 16%);
+    outline: 1px solid black;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 12px rgba(0, 0, 0, 0.2);
+}
+.first{
+    max-width: 100%;
+    border-radius: 1rem;
+}
+.card h2{
+    margin-top: 15px;
+}
+.card .desc{
+    margin-top: 30px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+.balance{
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    margin-bottom: 15px;
+    gap: 0.3rem;
+}
+.time{
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    font-weight: 300;
+    margin-bottom: 15px;
+    gap: 0.3rem;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profil{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.avatar{
+    height: 30px;
+    outline: 1px solid white; 
+    border-radius: 50%;
+}
+.divider{
+    width: 100%;
+    height: 2px;
+    background-color: hsl(215, 32%, 27%);
+    margin-bottom: 20px;
+}
+.profil p{
+    color: hsl(215, 51%, 70%);
+}
+.profil b{
+    color: white;
+}
+.eth {
+    position: relative; /* Positionner par rapport à ce conteneur */
+  }
+  
+  .overlay {
+    background-color: hsl(215, 51%, 70%);
+    opacity: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 1rem;
+    display: none; /* Masquer par défaut */
+    pointer-events: none; /* Laissez passer la souris */
+  }
+  
+  .view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Masquer l'icône par défaut */
+    pointer-events: all; /* Permet d'interagir avec l'icône */
+  }
+  
+  .first:hover {
+    color: hsl(215, 51%, 70%);
+  }
+  
+  /* Afficher l'overlay et l'icône "view" lors du survol */
+  .eth:hover .overlay,
+  .eth:hover .view {
+    display: block;
+  }
+
